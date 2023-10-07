@@ -14,6 +14,17 @@
 		4D8CAD642AD1678D00353F97 /* PostsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8CAD632AD1678D00353F97 /* PostsVC.swift */; };
 		4D8CAD662AD167B000353F97 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8CAD652AD167B000353F97 /* TabBar.swift */; };
 		4D8CAD682AD167CB00353F97 /* SavedPostsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8CAD672AD167CB00353F97 /* SavedPostsVC.swift */; };
+		4D8CAD722AD170C000353F97 /* Net.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8CAD712AD170C000353F97 /* Net.swift */; };
+		4D8CAD742AD1711200353F97 /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8CAD732AD1711200353F97 /* EndPoints.swift */; };
+		4D8CAD762AD1712700353F97 /* HTTPRequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8CAD752AD1712700353F97 /* HTTPRequestMethod.swift */; };
+		4D8CAD782AD1713600353F97 /* SessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8CAD772AD1713600353F97 /* SessionProtocol.swift */; };
+		4D8CAD7B2AD1719800353F97 /* Ext+URLComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8CAD7A2AD1719800353F97 /* Ext+URLComponents.swift */; };
+		4D8CAD7D2AD171A700353F97 /* Ext+URLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8CAD7C2AD171A700353F97 /* Ext+URLRequest.swift */; };
+		4D8CAD7F2AD171BE00353F97 /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8CAD7E2AD171BE00353F97 /* URL.swift */; };
+		4D8CAD812AD1733400353F97 /* PostsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8CAD802AD1733400353F97 /* PostsVM.swift */; };
+		4D8CAD832AD1735800353F97 /* PostsDM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8CAD822AD1735800353F97 /* PostsDM.swift */; };
+		4D8CAD852AD174B200353F97 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8CAD842AD174B200353F97 /* Box.swift */; };
+		4D8CAD882AD1962100353F97 /* PostDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8CAD872AD1962100353F97 /* PostDetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +37,17 @@
 		4D8CAD632AD1678D00353F97 /* PostsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsVC.swift; sourceTree = "<group>"; };
 		4D8CAD652AD167B000353F97 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		4D8CAD672AD167CB00353F97 /* SavedPostsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedPostsVC.swift; sourceTree = "<group>"; };
+		4D8CAD712AD170C000353F97 /* Net.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Net.swift; sourceTree = "<group>"; };
+		4D8CAD732AD1711200353F97 /* EndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
+		4D8CAD752AD1712700353F97 /* HTTPRequestMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequestMethod.swift; sourceTree = "<group>"; };
+		4D8CAD772AD1713600353F97 /* SessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionProtocol.swift; sourceTree = "<group>"; };
+		4D8CAD7A2AD1719800353F97 /* Ext+URLComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+URLComponents.swift"; sourceTree = "<group>"; };
+		4D8CAD7C2AD171A700353F97 /* Ext+URLRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+URLRequest.swift"; sourceTree = "<group>"; };
+		4D8CAD7E2AD171BE00353F97 /* URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
+		4D8CAD802AD1733400353F97 /* PostsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsVM.swift; sourceTree = "<group>"; };
+		4D8CAD822AD1735800353F97 /* PostsDM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsDM.swift; sourceTree = "<group>"; };
+		4D8CAD842AD174B200353F97 /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+		4D8CAD872AD1962100353F97 /* PostDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +80,12 @@
 		4D8CAD4E2AD1670900353F97 /* O1000Test */ = {
 			isa = PBXGroup;
 			children = (
+				4D8CAD792AD1718F00353F97 /* Helper */,
 				4D8CAD6E2AD16C0300353F97 /* Net */,
 				4D8CAD692AD167D200353F97 /* Root */,
 				4D8CAD6A2AD167DD00353F97 /* TabBar */,
 				4D8CAD6B2AD1680200353F97 /* Posts */,
+				4D8CAD862AD1960700353F97 /* PostDetail */,
 				4D8CAD6C2AD1681300353F97 /* SavedPosts */,
 				4D8CAD6D2AD1682400353F97 /* Supporting Files */,
 				4D8CAD5D2AD1670E00353F97 /* Info.plist */,
@@ -115,6 +139,10 @@
 		4D8CAD6E2AD16C0300353F97 /* Net */ = {
 			isa = PBXGroup;
 			children = (
+				4D8CAD712AD170C000353F97 /* Net.swift */,
+				4D8CAD732AD1711200353F97 /* EndPoints.swift */,
+				4D8CAD752AD1712700353F97 /* HTTPRequestMethod.swift */,
+				4D8CAD772AD1713600353F97 /* SessionProtocol.swift */,
 			);
 			path = Net;
 			sourceTree = "<group>";
@@ -130,8 +158,29 @@
 		4D8CAD702AD16CA600353F97 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				4D8CAD802AD1733400353F97 /* PostsVM.swift */,
+				4D8CAD822AD1735800353F97 /* PostsDM.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4D8CAD792AD1718F00353F97 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				4D8CAD7A2AD1719800353F97 /* Ext+URLComponents.swift */,
+				4D8CAD7E2AD171BE00353F97 /* URL.swift */,
+				4D8CAD7C2AD171A700353F97 /* Ext+URLRequest.swift */,
+				4D8CAD842AD174B200353F97 /* Box.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		4D8CAD862AD1960700353F97 /* PostDetail */ = {
+			isa = PBXGroup;
+			children = (
+				4D8CAD872AD1962100353F97 /* PostDetailVC.swift */,
+			);
+			path = PostDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,10 +254,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D8CAD502AD1670900353F97 /* AppDelegate.swift in Sources */,
+				4D8CAD722AD170C000353F97 /* Net.swift in Sources */,
 				4D8CAD522AD1670900353F97 /* SceneDelegate.swift in Sources */,
+				4D8CAD742AD1711200353F97 /* EndPoints.swift in Sources */,
+				4D8CAD762AD1712700353F97 /* HTTPRequestMethod.swift in Sources */,
+				4D8CAD7B2AD1719800353F97 /* Ext+URLComponents.swift in Sources */,
+				4D8CAD832AD1735800353F97 /* PostsDM.swift in Sources */,
+				4D8CAD782AD1713600353F97 /* SessionProtocol.swift in Sources */,
 				4D8CAD642AD1678D00353F97 /* PostsVC.swift in Sources */,
+				4D8CAD852AD174B200353F97 /* Box.swift in Sources */,
 				4D8CAD662AD167B000353F97 /* TabBar.swift in Sources */,
+				4D8CAD7D2AD171A700353F97 /* Ext+URLRequest.swift in Sources */,
 				4D8CAD682AD167CB00353F97 /* SavedPostsVC.swift in Sources */,
+				4D8CAD812AD1733400353F97 /* PostsVM.swift in Sources */,
+				4D8CAD7F2AD171BE00353F97 /* URL.swift in Sources */,
+				4D8CAD882AD1962100353F97 /* PostDetailVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

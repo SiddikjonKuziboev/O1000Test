@@ -17,7 +17,7 @@ class TabBar: UITabBarController {
     }
     
     private func setUpViewController() {
-        self.viewControllers = [getPostsVC(), getSavedPostsVC()]
+        self.viewControllers = [UINavigationController(rootViewController: getPostsVC()), getSavedPostsVC()]
     }
     
     
@@ -40,7 +40,7 @@ extension TabBar {
         
         let vc = SavedPostsVC()
         vc.tabBarItem.image = UIImage(systemName: "folder")
-        vc.tabBarItem.title = "Favorites"
+        vc.tabBarItem.title = "Saved"
         return vc
         
     }
