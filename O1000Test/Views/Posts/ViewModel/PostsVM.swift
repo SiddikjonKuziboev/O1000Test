@@ -11,6 +11,7 @@ class PostsVM {
     
     let api = Net.shared
     var posts: Box<[PostsDM]> = Box([])
+    var filteredPosts: Box<[PostsDM]> = Box([])
     
 }
 
@@ -18,17 +19,16 @@ extension PostsVM {
     
     func getPosts() {
         
-        api.fetchDataFromAPI { result in
+        api.fetchPostsData { result in
             switch result {
             case .success(let posts):
-                // Handle the fetched posts here
-                print(posts)
+
                 DispatchQueue.main.async {
                     self.posts.value = posts
                 }
 
             case .failure(let error):
-                // Handle the error here
+
                 print("Error: \(error.localizedDescription)")
             }
         }
@@ -36,8 +36,11 @@ extension PostsVM {
     }
     
     
+    func filter(for searchText: String) {
+        filteredPosts.value = searchText.isEmpty ? posts.value : posts.value.filter { $0.title.contains(searchText.lowercased()) }
+        
+    }
     
-   
     
 }
     
