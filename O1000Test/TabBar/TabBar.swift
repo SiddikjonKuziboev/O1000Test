@@ -17,8 +17,9 @@ class TabBar: UITabBarController {
     }
     
     private func setUpViewController() {
-        self.viewControllers = [UINavigationController(rootViewController: getPostsVC()), getSavedPostsVC()]
+        self.viewControllers = [UINavigationController(rootViewController: getPostsVC()),UINavigationController(rootViewController: getSavedPostsVC())]
     }
+    
     
     
 

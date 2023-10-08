@@ -4,7 +4,7 @@
 target 'O1000Test' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-
-  # Pods for O1000Test
+ 
+pod 'RealmSwift'
 
 end
